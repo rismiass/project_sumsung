@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grad"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/fon_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vector_1"
+        android:layout_marginBottom="-200dp"/>
+
+    <ImageView
+        android:id="@+id/fon_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:layout_marginBottom="-470dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vector_2" />
+
+
+    <EditText
+        android:id="@+id/name_user"
+        style="@style/editLine"
+        android:gravity="start|top"
+        android:hint="@string/name_user"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="RtlCompat,TextFields" />
+
+    <EditText
+        style="@style/editLine"
+        android:id="@+id/surname_user"
+        android:gravity="start|top"
+        android:hint="@string/surname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toBottomOf="@id/name_user"
+        tools:ignore="RtlCompat,TextFields"
+        />
+
+    <EditText
+        style="@style/editLine"
+        android:id="@+id/email_user"
+        android:gravity="start|top"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toBottomOf="@id/surname_user"
+        tools:ignore="RtlCompat,TextFields"/>
+
+    <EditText
+        style="@style/editLine"
+        android:id="@+id/phone_user"
+        android:gravity="start|top"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toBottomOf="@id/email_user"
+        tools:ignore="RtlCompat,TextFields"/>
+
+    <EditText
+        style="@style/editLine"
+        android:id="@+id/password"
+        android:gravity="start|top"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toBottomOf="@id/phone_user"
+        tools:ignore="RtlCompat,TextFields"/>
+
+    <EditText
+        style="@style/editLine"
+        android:id="@+id/password_toggle"
+        android:gravity="start|top"
+        android:hint="@string/password_toggle"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        tools:ignore="RtlCompat,TextFields"/>
+
+
+    <Button
+        android:id="@+id/register"
+        style="@style/outputButton"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_border"
+        android:text="@string/register_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_toggle" />
+
+    <Button
+        android:id="@+id/back"
+        style="@style/outputButton"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rectangle_3"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
