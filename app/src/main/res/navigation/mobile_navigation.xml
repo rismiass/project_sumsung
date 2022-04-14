@@ -19,7 +19,12 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.project.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:name="com.example.project.ui.subtract.NotificationsFragment"
+        android:label="@string/title_subtract"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="com.example.project.ui.information.InformationFragment"
+        android:label="@string/title_information"
+        tools:layout="@layout/information_fragment" />
 </navigation>

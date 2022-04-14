@@ -14,5 +14,6 @@ class RegisterActivity : AppCompatActivity() {
         //setContentView(binding.root)
         setContentView(R.layout.activity_register)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        
     }
 }
