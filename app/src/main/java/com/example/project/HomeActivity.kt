@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
                 R.id.navigation_information
             )
         )
-//        setupActionBarWithNavController(navController, appBarConfiguration)
+        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 }

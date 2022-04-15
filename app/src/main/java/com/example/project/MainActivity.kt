@@ -10,6 +10,7 @@ import android.widget.Toast
 import android.content.Intent
 import android.os.Handler
 import android.util.Log
+import android.view.Window
 import com.example.project.databinding.ActivityMainBinding
 
 
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setContentView(R.layout.activity_main)
