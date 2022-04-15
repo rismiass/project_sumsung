@@ -12,7 +12,7 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
         //binding = ActivityRegisterBinding.inflate(layoutInflater)
         //setContentView(binding.root)
         setContentView(R.layout.activity_register)
