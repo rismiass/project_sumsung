@@ -11,4 +11,5 @@
     <color name="menu_navigation_item">#88489e</color>
     <color name="opacity">#1AFFFEFC</color>
     <color name="status">#395170</color>
+    <color name="colorback">#33FFFFFF</color>
 </resources>

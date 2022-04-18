@@ -27,5 +27,5 @@
     <string name="title_dashboard">Вакансии</string>
     <string name="title_subtract">Диалоги</string>
     <string name="title_information">Информация</string>
-    <string name="data_user">Сапрыкин   Константин Дмитриевич saprikostya@gmail.com +79818590069</string>
+    <string name="data_user">Сапрыкин\nКонстантин\nДмитриевич\nsaprikostya@gmail.com\n+79818590069</string>
 </resources>
