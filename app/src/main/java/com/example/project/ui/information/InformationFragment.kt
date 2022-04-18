@@ -20,7 +20,7 @@ class InformationFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.information_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_information, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

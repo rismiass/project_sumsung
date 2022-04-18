@@ -26,5 +26,5 @@
         android:id="@+id/navigation_information"
         android:name="com.example.project.ui.information.InformationFragment"
         android:label="@string/title_information"
-        tools:layout="@layout/information_fragment" />
+        tools:layout="@layout/fragment_information" />
 </navigation>
