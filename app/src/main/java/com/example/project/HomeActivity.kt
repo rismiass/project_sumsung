@@ -12,6 +12,7 @@ import com.example.project.databinding.ActivityHomeBinding
 import android.graphics.drawable.ColorDrawable
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.navigation.ui.NavigationUI
 
@@ -49,6 +50,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.settings -> Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
+        }
         return super.onOptionsItemSelected(item)
     }
 }

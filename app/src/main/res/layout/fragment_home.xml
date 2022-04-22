@@ -89,6 +89,7 @@
         <TextView
             android:id="@+id/text_user"
             android:layout_width="match_parent"
+            android:paddingBottom="20dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
@@ -98,7 +99,6 @@
             android:textSize="14sp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -139,6 +139,7 @@
             android:text="@string/work_data"
             android:textAlignment="textStart"
             android:textColor="@color/black"
+            android:paddingBottom="20dp"
             android:textSize="14sp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
