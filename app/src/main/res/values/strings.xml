@@ -28,4 +28,9 @@
     <string name="title_subtract">Диалоги</string>
     <string name="title_information">Информация</string>
     <string name="data_user">Сапрыкин\nКонстантин\nДмитриевич\nsaprikostya@gmail.com\n+79818590069</string>
+    <string name="about_self">О себе:</string>
+    <string name="text_user">Обо мне нет никакой информации</string>
+    <string name="history_work">История:</string>
+    <string name="work_data">1. ООО “Канцсвет” - 2 месяца;\n2. ООО “Бухгалодон” - 3 месяца;</string>
+    <string name="settings">Настройки</string>
 </resources>

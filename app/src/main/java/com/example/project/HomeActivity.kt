@@ -10,6 +10,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.project.databinding.ActivityHomeBinding
 import android.graphics.drawable.ColorDrawable
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.ActionBar
 import androidx.navigation.ui.NavigationUI
 
@@ -39,5 +41,14 @@ class HomeActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = this.findNavController(R.id.nav_host_fragment_activity_home)
         return navController.navigateUp()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.action_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return super.onOptionsItemSelected(item)
     }
 }
