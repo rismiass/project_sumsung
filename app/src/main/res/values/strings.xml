@@ -34,4 +34,8 @@
     <string name="work_data">1. ООО “Канцсвет” - 2 месяца;\n2. ООО “Бухгалодон” - 3 месяца;</string>
     <string name="settings">Настройки</string>
     <string name="profile">Профиль</string>
+    <string name="courses_text">Курсы</string>
+    <string name="text_advice_lawyer">Советы от юриста</string>
+    <string name="text_about_company">О компании</string>
+    <string name="contacts">Контакты</string>
 </resources>

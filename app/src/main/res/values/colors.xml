@@ -12,4 +12,5 @@
     <color name="opacity">#1AFFFEFC</color>
     <color name="status">#395170</color>
     <color name="colorback">#33FFFFFF</color>
+    <color name="card_background">#CFBDE9</color>
 </resources>

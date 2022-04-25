@@ -14,7 +14,9 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
+import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.ui.NavigationUI
+import com.example.project.ui.information.InformationFragment
 
 
 class HomeActivity : AppCompatActivity() {
@@ -50,8 +52,11 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val t = supportFragmentManager.beginTransaction()
+
         when (item.itemId) {
-            R.id.settings -> Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
+
+            R.id.settings ->Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
         }
         return super.onOptionsItemSelected(item)
     }
