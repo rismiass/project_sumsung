@@ -27,4 +27,10 @@
         android:name="com.example.project.ui.information.InformationFragment"
         android:label="@string/title_information"
         tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/navigation_blamk"
+        android:name="com.example.project.ui.BlankFragment"
+        android:label="Тест"
+        tools:layout="@layout/blank_fragment" />
+
 </navigation>

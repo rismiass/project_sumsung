@@ -34,9 +34,11 @@ class HomeActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.navView
 
 
+
         val navController = findNavController(R.id.nav_host_fragment_activity_home)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+
         navView.setupWithNavController(navController)
         setupActionBarWithNavController(navController)
         NavigationUI.setupActionBarWithNavController(this,navController)
@@ -52,12 +54,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val t = supportFragmentManager.beginTransaction()
-
-        when (item.itemId) {
-
-            R.id.settings ->Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
-        }
-        return super.onOptionsItemSelected(item)
+            return NavigationUI.onNavDestinationSelected(item, this.findNavController(R.id.nav_host_fragment_activity_home))
+                    || super.onOptionsItemSelected(item)
+        //Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
     }
+
 }

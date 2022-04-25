@@ -63,7 +63,8 @@
                 android:id="@+id/picture_work"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/of"/>
+                android:src="@drawable/of"
+                android:contentDescription="Официант" />
             <LinearLayout
                 android:layout_marginStart="20dp"
                 android:layout_width="match_parent"
