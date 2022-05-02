@@ -12,6 +12,7 @@ import com.example.project.databinding.ActivityHomeBinding
 import android.graphics.drawable.ColorDrawable
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentTransaction
@@ -36,6 +37,7 @@ class HomeActivity : AppCompatActivity() {
 
 
         val navController = findNavController(R.id.nav_host_fragment_activity_home)
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
 

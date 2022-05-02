@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.subtract.NotificationsFragment">
-    
+    tools:context=".ui.settings.SettingsFragment">
+
     <LinearLayout
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
-                android:text="@string/courses_text"/>
+                android:text="@string/main"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
-                android:text="@string/text_advice_lawyer"/>
+                android:text="@string/replace_foto"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
-                android:text="@string/text_about_company"/>
+                android:text="@string/about_self0"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -102,15 +102,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
-                android:text="@string/contacts"/>
+                android:text="@string/history_work0"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
                 android:layout_gravity="right|center_vertical"
-                android:src="@drawable/union"
-                tools:ignore="RtlHardcoded" />
+                android:src="@drawable/union" />
         </FrameLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

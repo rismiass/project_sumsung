@@ -26,11 +26,29 @@
         android:id="@+id/navigation_information"
         android:name="com.example.project.ui.information.InformationFragment"
         android:label="@string/title_information"
-        tools:layout="@layout/fragment_information" />
+        tools:layout="@layout/fragment_information">
+        <action
+            android:id="@+id/action_informationFragment_to_adviceFragment"
+            app:destination="@id/adviceLawyer" />
+        <action
+            android:id="@+id/action_informationFragment_to_contactsFragment"
+            app:destination="@id/contacts" />
+    </fragment>
     <fragment
-        android:id="@+id/navigation_blamk"
-        android:name="com.example.project.ui.BlankFragment"
+        android:id="@+id/navigation_settings"
+        android:name="com.example.project.ui.settings.SettingsFragment"
         android:label="Тест"
-        tools:layout="@layout/blank_fragment" />
-
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/adviceLawyer"
+        android:name="com.example.project.ui.advice.AdviceFragment"
+        android:label="Советы от юриста"
+        tools:layout="@layout/fragment_advice">
+    </fragment>
+    <fragment
+        android:id="@+id/contacts"
+        android:name="com.example.project.ui.contacts.ContactsFragment"
+        android:label="Контакты"
+        tools:layout="@layout/fragment_contacts">
+    </fragment>
 </navigation>

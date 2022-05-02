@@ -6,30 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <ImageView
-        android:id="@+id/fon_1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="false"
-        android:scaleType="fitEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vector_3"/>
-
-    <ImageView
-        android:id="@+id/fon_2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:adjustViewBounds="false"
-        android:scaleType="fitEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/vector_4" />
-
     <TextView
         android:id="@+id/text_dashboard"
         android:layout_width="match_parent"
@@ -59,41 +35,33 @@
             android:orientation="horizontal"
             android:background="@color/card_background"
             android:layout_height="match_parent">
+
             <ImageView
                 android:id="@+id/picture_work"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/of"
-                android:contentDescription="Официант" />
+                android:contentDescription="@string/waiter"
+                android:src="@drawable/of" />
             <LinearLayout
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="match_parent">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="Официант"/>
+                    style="@style/advertisementText"
+                    android:text="@string/waiter"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="250 рублей/час"/>
+                    style="@style/advertisementText"
+                    android:text="@string/payment"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/roboto"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="Пятница, Восресенье"/>
+                    style="@style/advertisementText"
+                    android:text="@string/days_work"/>
             </LinearLayout>
         </LinearLayout>
 

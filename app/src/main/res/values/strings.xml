@@ -38,4 +38,17 @@
     <string name="text_advice_lawyer">Советы от юриста</string>
     <string name="text_about_company">О компании</string>
     <string name="contacts">Контакты</string>
+    <string name="waiter">Официант</string>
+    <string name="payment">250 рублей/час</string>
+    <string name="days_work">Пятница, Восресенье</string>
+    <string name="main">Главное</string>
+    <string name="replace_foto">Заменить фото</string>
+    <string name="about_self0">О себе</string>
+    <string name="history_work0">История работы</string>
+    <string name="advice_1">На что обращать внимание при подписании договора?</string>
+    <string name="advice_2">При каких условиях могут работать подростки разных возрастов?</string>
+    <string name="text_contacts_phone">Номер телефона:\n +7 (964) 322-80-77</string>
+    <string name="text_contacts_email">Email:\n ekaterinagulko725@gmail.com</string>
+    <string name="text_contacts_vk">Группа в ВК:\n https://vk.com/public203081451</string>
+    <string name="text_contacts_instagram">Instagram:\n @schooljob</string>
 </resources>
