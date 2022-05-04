@@ -1,5 +1,6 @@
 package com.example.project
 
+import android.content.pm.ActivityInfo
 import android.graphics.Color
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -44,6 +45,7 @@ class HomeActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
         setupActionBarWithNavController(navController)
         NavigationUI.setupActionBarWithNavController(this,navController)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
     override fun onSupportNavigateUp(): Boolean {
         val navController = this.findNavController(R.id.nav_host_fragment_activity_home)

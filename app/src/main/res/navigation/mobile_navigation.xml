@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_informationFragment_to_contactsFragment"
             app:destination="@id/contacts" />
+        <action
+            android:id="@+id/action_informationFragment_to_companyFragment"
+            app:destination="@id/company" />
     </fragment>
     <fragment
         android:id="@+id/navigation_settings"
@@ -50,5 +53,11 @@
         android:name="com.example.project.ui.contacts.ContactsFragment"
         android:label="Контакты"
         tools:layout="@layout/fragment_contacts">
+    </fragment>
+    <fragment
+        android:id="@+id/company"
+        android:name="com.example.project.ui.company.CompanyFragment"
+        android:label="О компании"
+        tools:layout="@layout/fragment_company">
     </fragment>
 </navigation>

@@ -52,6 +52,9 @@ class InformationFragment : Fragment() {
         binding.contacts.setOnClickListener {
             view.findNavController().navigate(R.id.action_informationFragment_to_contactsFragment)
         }
+        binding.aboutCompany.setOnClickListener {
+            view.findNavController().navigate(R.id.action_informationFragment_to_companyFragment)
+        }
 
     }
 

@@ -8,7 +8,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.RecyclerView
+import com.example.project.HomeActivity
 import com.example.project.R
+import com.example.project.adaptor.AdaptorAdvertisement
+import com.example.project.data.DataAdvertisement
 import com.example.project.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -31,10 +35,15 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+        //val textView: TextView = binding.textDashboard
+        //dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        //    textView.text = it
+        //})
+        val data = DataAdvertisement().loadList()
+        val recyclerView = binding.listAdvertisements
+        val adapter = context?.let { AdaptorAdvertisement(data, it) }
+        recyclerView.adapter = adapter
+        print(data)
         return root
     }
 
