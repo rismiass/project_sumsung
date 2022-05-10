@@ -13,4 +13,6 @@
     <color name="status">#395170</color>
     <color name="colorback">#33FFFFFF</color>
     <color name="card_background">#CFBDE9</color>
+    <color name="transparent">#00000000</color>
+    <color name="chat_card_background">#A56DB6</color>
 </resources>

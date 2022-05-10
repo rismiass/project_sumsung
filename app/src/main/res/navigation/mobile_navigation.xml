@@ -36,11 +36,14 @@
         <action
             android:id="@+id/action_informationFragment_to_companyFragment"
             app:destination="@id/company" />
+        <action
+            android:id="@+id/action_informationFragment_to_courseFragment"
+            app:destination="@id/courses" />
     </fragment>
     <fragment
         android:id="@+id/navigation_settings"
         android:name="com.example.project.ui.settings.SettingsFragment"
-        android:label="Тест"
+        android:label="Настройки"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/adviceLawyer"
@@ -59,5 +62,11 @@
         android:name="com.example.project.ui.company.CompanyFragment"
         android:label="О компании"
         tools:layout="@layout/fragment_company">
+    </fragment>
+    <fragment
+        android:id="@+id/courses"
+        android:name="com.example.project.ui.course.CourseFragment"
+        android:label="Курсы"
+        tools:layout="@layout/fragment_course">
     </fragment>
 </navigation>
