@@ -14,21 +14,22 @@
             android:layout_height="match_parent">
             <androidx.cardview.widget.CardView
                 android:layout_height="74dp"
+                android:background="#0073E6"
                 android:layout_width="74dp"
-                android:layout_marginStart="10dp"
                 app:cardCornerRadius="100dp">
                 <ImageView
-                    android:id="@+id/picture_work"
+                    android:id="@+id/picture_sender"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="@string/waiter"
+                    android:background="#0073E6"
+                    android:contentDescription="@string/sender"
                     android:scaleType="centerCrop"
                     android:src="@drawable/waiter" />
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 app:cardBackgroundColor="@color/chat_card_background"
                 app:cardCornerRadius="16dp"
                 android:layout_height="match_parent">
@@ -38,14 +39,14 @@
                 android:orientation="vertical"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/text_profession"
+                    android:id="@+id/sender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/advertisementText"
                     android:textSize="24dp"
                     android:text="@string/mcdonalds"/>
                 <TextView
-                    android:id="@+id/text_salary"
+                    android:id="@+id/last_message"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/advertisementText"

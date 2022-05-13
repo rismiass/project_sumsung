@@ -8,6 +8,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.project.adaptor.AdaptorAdvertisement
+import com.example.project.adaptor.AdaptorChat
+import com.example.project.data.DataAdvertisement
+import com.example.project.data.DataChat
 import com.example.project.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
@@ -29,11 +33,11 @@ class NotificationsFragment : Fragment() {
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+        val data = DataChat().loadList()
+        val recyclerView = binding.listChats
+        val adapter = context?.let { AdaptorChat(data, it) }
+        recyclerView.adapter = adapter
+        print(data)
         return root
     }
 
