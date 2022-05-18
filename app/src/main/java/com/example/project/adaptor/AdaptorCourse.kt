@@ -19,15 +19,15 @@ public class AdaptorCourse(private val data : ArrayList<Course>, val context: Co
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInFlater = LayoutInflater.from(parent.context)
-        val view = layoutInFlater.inflate(R.layout.course_view, parent, false)
+        val view = layoutInFlater.inflate(R.layout.view_course, parent, false)
         return ItemViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = data[position]
-        val title = holder.root.findViewById<TextView>(R.id.text_profession)
-        val price = holder.root.findViewById<TextView>(R.id.text_salary)
-        val image = holder.root.findViewById<ImageView>(R.id.picture_work)
+        val title = holder.root.findViewById<TextView>(R.id.title_course)
+        val price = holder.root.findViewById<TextView>(R.id.price)
+        val image = holder.root.findViewById<ImageView>(R.id.picture_course)
         image.setImageResource(item.image)
         title.text = item.title
         price.text = item.price

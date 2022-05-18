@@ -19,7 +19,7 @@ public class AdaptorChat(private val data : ArrayList<Chat>, val context: Contex
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInFlater = LayoutInflater.from(parent.context)
-        val view = layoutInFlater.inflate(R.layout.chat_view, parent, false)
+        val view = layoutInFlater.inflate(R.layout.view_chat, parent, false)
         return ItemViewHolder(view)
     }
 

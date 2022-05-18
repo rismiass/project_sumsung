@@ -20,7 +20,7 @@ public class AdaptorAdvertisement(private val data : ArrayList<Advertisement>, v
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInFlater = LayoutInflater.from(parent.context)
-        val view = layoutInFlater.inflate(R.layout.advertisement_view, parent, false)
+        val view = layoutInFlater.inflate(R.layout.view_advertisement, parent, false)
         return ItemViewHolder(view)
     }
 

@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/picture_work"
+                android:id="@+id/picture_course"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/waiter"
@@ -30,13 +30,13 @@
                 android:orientation="vertical"
                 android:layout_height="match_parent">
                 <TextView
-                    android:id="@+id/text_profession"
+                    android:id="@+id/title_course"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/advertisementText"
                     android:text="@string/waiter"/>
                 <TextView
-                    android:id="@+id/text_salary"
+                    android:id="@+id/price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     style="@style/advertisementText"
