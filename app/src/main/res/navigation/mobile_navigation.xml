@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.project.ui.home.HomeFragment"
+        android:name="app.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.project.ui.dashboard.DashboardFragment"
+        android:name="app.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.project.ui.subtract.NotificationsFragment"
+        android:name="app.ui.subtract.NotificationsFragment"
         android:label="@string/title_subtract"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/navigation_information"
-        android:name="com.example.project.ui.information.InformationFragment"
+        android:name="app.ui.information.InformationFragment"
         android:label="@string/title_information"
         tools:layout="@layout/fragment_information">
         <action
@@ -42,30 +42,30 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.example.project.ui.settings.SettingsFragment"
+        android:name="app.ui.settings.SettingsFragment"
         android:label="Настройки"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/adviceLawyer"
-        android:name="com.example.project.ui.advice.AdviceFragment"
+        android:name="app.ui.advice.AdviceFragment"
         android:label="Советы от юриста"
         tools:layout="@layout/fragment_advice">
     </fragment>
     <fragment
         android:id="@+id/contacts"
-        android:name="com.example.project.ui.contacts.ContactsFragment"
+        android:name="app.ui.contacts.ContactsFragment"
         android:label="Контакты"
         tools:layout="@layout/fragment_contacts">
     </fragment>
     <fragment
         android:id="@+id/company"
-        android:name="com.example.project.ui.company.CompanyFragment"
+        android:name="app.ui.company.CompanyFragment"
         android:label="О компании"
         tools:layout="@layout/fragment_company">
     </fragment>
     <fragment
         android:id="@+id/courses"
-        android:name="com.example.project.ui.course.CourseFragment"
+        android:name="app.ui.course.CourseFragment"
         android:label="Курсы"
         tools:layout="@layout/fragment_course">
     </fragment>
