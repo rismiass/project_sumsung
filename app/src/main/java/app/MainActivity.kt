@@ -7,13 +7,15 @@ import android.widget.Button
 
 import android.widget.Toast
 import android.content.Intent
-import android.util.Log
+import android.widget.EditText
+import app.model.accounts.AccountRepository
 import com.example.project.R
 import com.example.project.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    //private val accountsRepository: AccountRepository = Singletons.accountsRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         val buttonRegister = findViewById<Button>(R.id.register)
         buttonRegister.setOnClickListener {
-            Log.d("onclick", "asdfas")
+            //accountsRepository.signIn(binding.phoneEmail.text.toString(), binding.password.text.toString())
             Toast.makeText(applicationContext, "Регистрация", Toast.LENGTH_SHORT).show()
             val intent = Intent(applicationContext, RegisterActivity::class.java)
             startActivity(intent)

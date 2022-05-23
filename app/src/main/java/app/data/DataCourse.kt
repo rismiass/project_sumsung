@@ -1,7 +1,7 @@
 package app.data
 
 import com.example.project.R
-import app.model.Course
+import app.model.dataclasses.Course
 
 class DataCourse {
 

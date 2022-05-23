@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.R
-import app.model.Advertisement
+import app.model.dataclasses.Advertisement
 import java.util.ArrayList
 
 

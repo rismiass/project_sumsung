@@ -2,12 +2,12 @@ package sources.base
 
 import app.model.SourcesProvider
 import app.model.accounts.AccountSource
-import sources.accounts.RetrofitAccountSource
+import sources.accounts.OkhttpAccountSource
 
-class RetrofitSourcesProvider(
-    private val config: RetrofitConfig
+class OkhttpSourcesProvider(
+    private val config: OkhttpConfig
 ): SourcesProvider {
     override fun getAccountSource(): AccountSource {
-        return RetrofitAccountSource(config)
+        return OkhttpAccountSource(config)
     }
 }

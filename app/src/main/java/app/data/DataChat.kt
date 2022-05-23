@@ -1,7 +1,7 @@
 package app.data
 
 import com.example.project.R
-import app.model.Chat
+import app.model.dataclasses.Chat
 
 class DataChat {
 

@@ -1,6 +1,6 @@
 package app.data
 
-import app.model.ItemSettings
+import app.model.dataclasses.ItemSettings
 
 class DataSettingsMain {
     public  fun loadList(): ArrayList<ItemSettings> {

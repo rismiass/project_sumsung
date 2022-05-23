@@ -1,7 +1,7 @@
 package app.data
 
 import com.example.project.R
-import app.model.Advertisement
+import app.model.dataclasses.Advertisement
 
 class DataAdvertisement {
 

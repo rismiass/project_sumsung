@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.R
-import app.model.Chat
+import app.model.dataclasses.Chat
 import java.util.ArrayList
 
 public class AdaptorChat(private val data : ArrayList<Chat>, val context: Context) : RecyclerView.Adapter<AdaptorChat.ItemViewHolder>() {

@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.R
-import app.model.Course
+import app.model.dataclasses.Course
 import java.util.ArrayList
 
 public class AdaptorCourse(private val data : ArrayList<Course>, val context: Context) : RecyclerView.Adapter<AdaptorCourse.ItemViewHolder>() {

@@ -5,7 +5,7 @@ package app.model.accounts
       * Авторизация пользователя
       * @return JWT-token
       */
-     suspend fun signIn(email: String, password: String): String
+    suspend fun signIn(email: String, password: String): String
 
      /**
       * Создаёт новый аккаунт

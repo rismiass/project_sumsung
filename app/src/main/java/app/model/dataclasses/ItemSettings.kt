@@ -1,6 +1,6 @@
-package app.model
+package app.model.dataclasses
 
-class ItemSettings(
+data class ItemSettings(
     public val titleSettings: String,
     public val textSettings: String
-) {}
+)
