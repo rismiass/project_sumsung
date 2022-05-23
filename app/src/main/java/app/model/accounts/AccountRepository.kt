@@ -4,12 +4,13 @@ import android.text.Editable
 import app.model.BackendException
 import app.model.InvalidCredentialsException
 import app.model.settings.AppSettings
+import sources.accounts.OkhttpAccountSource
 
 class AccountRepository(
     private val accountsSource: AccountSource
 ) {
 
-    fun signIn(email: String, password: String): String {
+    suspend fun signIn(email: String, password: String): String {
         val token = try {
             accountsSource.signIn(email, password)
         } catch (e: Exception) {

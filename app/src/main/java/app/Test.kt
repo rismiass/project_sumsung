@@ -10,7 +10,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.Body
-import sources.accounts.AccountApi
 import sources.accounts.entities.SignInRequestEntity
 import sources.accounts.entities.SignInResponseEntity
 
