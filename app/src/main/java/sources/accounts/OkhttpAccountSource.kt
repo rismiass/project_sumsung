@@ -20,6 +20,7 @@ class OkhttpAccountSource(
             email = email,
             password = password
         )
+
         val request = Request.Builder().
                 post(signInRequestEntity.toJsonRequestBody())
             .endpoint("sign-in").build()
@@ -43,10 +44,10 @@ class OkhttpAccountSource(
         client.newCall(request).suspendEnqueue()
     }
 
-    override suspend fun getAccount(userId: Long): Account {
+    override suspend fun getAccount(): Account {
         delay(1000)
         val request = Request.Builder()
-            .get().endpoint("/get/profile/${userId}").build()
+            .get().endpoint("/get-profile").build()
         val response = client.newCall(request).suspendEnqueue()
         val accountEntity = response.parseJsonResponse<GetAccountResponseEntity>()
         return accountEntity.toAccount()

@@ -14,7 +14,7 @@ package app.model.accounts
      /**
       * Получает информацию о текущем залогированном пользователе
       */
-     suspend fun getAccount(userId: Long): Account
+     suspend fun getAccount(): Account
      /**
       * Изменяет пользовательские данные
       */

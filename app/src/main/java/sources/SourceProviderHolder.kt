@@ -3,6 +3,7 @@ package sources
 import app.Const
 import app.Singletons
 import app.model.SourcesProvider
+import app.model.settings.AppSettings
 import com.google.gson.Gson
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -21,12 +22,19 @@ object SourceProviderHolder {
     }
 
     private fun createOkHttpClient(): OkHttpClient {
-        return OkHttpClient.Builder()
+        return OkHttpClient.Builder().addInterceptor(createAuthorizationInterceptor(Singletons.appSettings))
             .addInterceptor(createLoggingInterceptor()).build()
     }
 
-    private fun createAuthorizationInterceptor() {
-
+    private fun createAuthorizationInterceptor(settings: AppSettings): Interceptor {
+        return Interceptor { chain ->
+            val newBuilder = chain.request().newBuilder()
+            val token = settings.getCurrentToken()
+            if (token != null) {
+                newBuilder.addHeader("Authorization", token)
+            }
+            return@Interceptor chain.proceed(newBuilder.build())
+        }
     }
 
     private fun createLoggingInterceptor(): Interceptor {

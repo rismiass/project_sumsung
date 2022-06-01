@@ -1,6 +1,5 @@
 package app.model
 
-import java.lang.reflect.Field
 
 
 open class AppException : RuntimeException {
