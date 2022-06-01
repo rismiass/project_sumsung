@@ -16,11 +16,11 @@ class HomeViewModel : ViewModel() {
     val text: LiveData<String> = _text
 
     private val sharedPreferencesAppSettings = Singletons.appSettings
+    var account: Account
     private val accountsRepository: AccountRepository = Singletons.accountsRepository
 
-    fun getAccount(): Account {
-        val account = runBlocking {
-            accountsRepository.getAccount()}
-        return account
+    init {
+        runBlocking { account = accountsRepository.getAccount() }
+
     }
 }

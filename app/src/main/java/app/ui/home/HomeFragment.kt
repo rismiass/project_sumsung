@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
-        val account = homeViewModel.getAccount()
+        val account = homeViewModel.account
         binding.dataUser.text = "${account.name}\n${account.surname}\n${account.email}\n${account.phone}"
         binding.textUser.text = account.aboutSelf
         binding.workUser.text = account.historyWork
