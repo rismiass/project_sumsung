@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import app.model.ads.entities.Ad
 import com.example.project.R
 import app.model.dataclasses.Advertisement
 import java.util.ArrayList
 
 
-public class AdaptorAdvertisement(private val data : ArrayList<Advertisement>, val context: Context) : RecyclerView.Adapter<AdaptorAdvertisement.ItemViewHolder>() {
+public class AdaptorAdvertisement(private val data : List<Ad>, val context: Context) : RecyclerView.Adapter<AdaptorAdvertisement.ItemViewHolder>() {
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val root = itemView
 

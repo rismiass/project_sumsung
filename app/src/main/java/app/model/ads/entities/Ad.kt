@@ -5,5 +5,5 @@ data class Ad(
     val profession:String,
     val salary: String,
     val working_days: String,
-    val image: Long
+    val image: Int
 )

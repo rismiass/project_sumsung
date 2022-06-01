@@ -34,11 +34,10 @@ class DashboardFragment : Fragment() {
         //dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
         //    textView.text = it
         //})
-        val data = DataAdvertisement().loadList()
+        val data = dashboardViewModel.listAds
         val recyclerView = binding.listAdvertisements
         val adapter = context?.let { AdaptorAdvertisement(data, it) }
         recyclerView.adapter = adapter
-        print(data)
         return root
     }
 

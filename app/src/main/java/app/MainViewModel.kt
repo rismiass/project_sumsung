@@ -23,8 +23,4 @@ class MainViewModel: ViewModel() {
     fun processEmptyFieldException(e: Exception): String {
         return "У вас не заполнено одно из полей"
     }
-    fun f(): String {
-        val adsRepository: AdsRepository = Singletons.adsRepository
-        val lst = runBlocking { adsRepository.getAds() }
-        return lst[0].profession
-    }}
+    }
