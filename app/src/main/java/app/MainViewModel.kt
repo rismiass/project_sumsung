@@ -5,6 +5,7 @@ import app.Singletons.accountsRepository
 import app.model.EmptyFieldException
 import app.model.accounts.AccountRepository
 import app.model.accounts.SignUpData
+import app.model.ads.AdsRepository
 import kotlinx.coroutines.runBlocking
 
 class MainViewModel: ViewModel() {
@@ -22,4 +23,8 @@ class MainViewModel: ViewModel() {
     fun processEmptyFieldException(e: Exception): String {
         return "У вас не заполнено одно из полей"
     }
-}
+    fun f(): String {
+        val adsRepository: AdsRepository = Singletons.adsRepository
+        val lst = runBlocking { adsRepository.getAds() }
+        return lst[0].profession
+    }}

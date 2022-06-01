@@ -4,6 +4,8 @@ import android.content.Context
 import app.model.SourcesProvider
 import app.model.accounts.AccountRepository
 import app.model.accounts.AccountSource
+import app.model.ads.AdsRepository
+import app.model.ads.AdsSource
 import app.model.settings.AppSettings
 import app.model.settings.SharedPreferencesAppSettings
 import sources.SourceProviderHolder
@@ -26,10 +28,20 @@ object Singletons {
         sourcesProvider.getAccountSource()
     }
 
+    private val adsSource: AdsSource by lazy {
+        sourcesProvider.getAdsSource()
+    }
+
     //репозитории
     val accountsRepository: AccountRepository by lazy {
         AccountRepository(
             accountsSource = accountsSource
+        )
+    }
+
+    val adsRepository: AdsRepository by lazy {
+        AdsRepository(
+            adsSource = adsSource
         )
     }
 

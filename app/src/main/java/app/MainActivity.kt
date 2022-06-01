@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         val buttonRegister = findViewById<Button>(R.id.register)
         buttonRegister.setOnClickListener {
-            Toast.makeText(applicationContext, "Регистрация", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, viewModel.f(), Toast.LENGTH_SHORT).show()
             val intent = Intent(applicationContext, RegisterActivity::class.java)
             startActivity(intent)
         }
