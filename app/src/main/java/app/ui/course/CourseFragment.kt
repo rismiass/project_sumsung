@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import app.Singletons
 import app.adaptor.AdaptorCourse
 import app.data.DataCourse
 import com.example.project.databinding.FragmentCourseBinding
@@ -27,7 +28,7 @@ class CourseFragment : Fragment() {
         _binding = FragmentCourseBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val data = DataCourse().loadList()
+        val data = viewModel.listCourses
         val recyclerView = binding.listCourses
         val adapter = context?.let { AdaptorCourse(data, it) }
         recyclerView.adapter = adapter

@@ -47,7 +47,7 @@ class OkhttpAccountSource(
     override suspend fun getAccount(): Account {
         delay(1000)
         val request = Request.Builder()
-            .get().endpoint("/get-profile").build()
+            .get().endpoint("get-profile").build()
         val response = client.newCall(request).suspendEnqueue()
         val accountEntity = response.parseJsonResponse<GetAccountResponseEntity>()
         return accountEntity.toAccount()

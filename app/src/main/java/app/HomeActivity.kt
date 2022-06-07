@@ -31,7 +31,7 @@ class HomeActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.navView
 
 
-
+        Singletons.init(applicationContext)
         val navController = findNavController(R.id.nav_host_fragment_activity_home)
 
         // Passing each menu ID as a set of Ids because each

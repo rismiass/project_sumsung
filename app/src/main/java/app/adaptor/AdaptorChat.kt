@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import app.model.chats.entities.Chat
 import com.example.project.R
-import app.model.dataclasses.Chat
 import java.util.ArrayList
 
-public class AdaptorChat(private val data : ArrayList<Chat>, val context: Context) : RecyclerView.Adapter<AdaptorChat.ItemViewHolder>() {
+public class AdaptorChat(private val data : List<Chat>, val context: Context) : RecyclerView.Adapter<AdaptorChat.ItemViewHolder>() {
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val root = itemView
 

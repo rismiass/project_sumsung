@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import app.adaptor.AdaptorChat
-import app.data.DataChat
 import com.example.project.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
@@ -29,7 +28,7 @@ class NotificationsFragment : Fragment() {
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        val data = DataChat().loadList()
+        val data = notificationsViewModel.listChats
         val recyclerView = binding.listChats
         val adapter = context?.let { AdaptorChat(data, it) }
         recyclerView.adapter = adapter

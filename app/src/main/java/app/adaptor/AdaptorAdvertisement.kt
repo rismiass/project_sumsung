@@ -9,8 +9,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import app.model.ads.entities.Ad
 import com.example.project.R
-import app.model.dataclasses.Advertisement
-import java.util.ArrayList
 
 
 public class AdaptorAdvertisement(private val data : List<Ad>, val context: Context) : RecyclerView.Adapter<AdaptorAdvertisement.ItemViewHolder>() {

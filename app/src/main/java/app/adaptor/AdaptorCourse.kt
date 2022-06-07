@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import app.model.courses.entities.Course
 import com.example.project.R
-import app.model.dataclasses.Course
 import java.util.ArrayList
 
-public class AdaptorCourse(private val data : ArrayList<Course>, val context: Context) : RecyclerView.Adapter<AdaptorCourse.ItemViewHolder>() {
+public class AdaptorCourse(private val data : List<Course>, val context: Context) : RecyclerView.Adapter<AdaptorCourse.ItemViewHolder>() {
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val root = itemView
 

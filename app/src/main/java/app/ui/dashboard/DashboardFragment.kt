@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import app.adaptor.AdaptorAdvertisement
-import app.data.DataAdvertisement
 import com.example.project.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
