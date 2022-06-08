@@ -8,7 +8,7 @@ import app.model.ads.AdsRepository
 import app.model.chats.ChatsRepository
 import kotlinx.coroutines.runBlocking
 
-class NotificationsViewModel : ViewModel() {
+class SubtractViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"

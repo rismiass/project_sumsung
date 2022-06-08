@@ -34,7 +34,6 @@ class HomeFragment : Fragment() {
         binding.textUser.text = account.aboutSelf
         binding.workUser.text = account.historyWork
         val root: View = binding.root
-        Toast.makeText(context, account.surname, Toast.LENGTH_LONG).show()
         return root
     }
 

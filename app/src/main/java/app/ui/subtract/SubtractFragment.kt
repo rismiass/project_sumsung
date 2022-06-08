@@ -9,9 +9,9 @@ import androidx.lifecycle.ViewModelProvider
 import app.adaptor.AdaptorChat
 import com.example.project.databinding.FragmentNotificationsBinding
 
-class NotificationsFragment : Fragment() {
+class SubtractFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var subtractViewModel: SubtractViewModel
     private var _binding: FragmentNotificationsBinding? = null
 
     // This property is only valid between onCreateView and
@@ -23,16 +23,15 @@ class NotificationsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        subtractViewModel =
+            ViewModelProvider(this).get(SubtractViewModel::class.java)
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        val data = notificationsViewModel.listChats
+        val data = subtractViewModel.listChats
         val recyclerView = binding.listChats
         val adapter = context?.let { AdaptorChat(data, it) }
         recyclerView.adapter = adapter
-        print(data)
         return root
     }
 

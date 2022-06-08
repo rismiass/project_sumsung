@@ -21,6 +21,6 @@ class MainViewModel: ViewModel() {
     }
 
     fun processEmptyFieldException(e: Exception): String {
-        return "У вас не заполнено одно из полей"
+        return e.message.toString()
     }
     }

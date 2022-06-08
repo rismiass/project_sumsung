@@ -49,10 +49,9 @@ class MainActivity : AppCompatActivity() {
         var flag = true
         try {
             viewModel.signIn(
-                binding.phoneEmail.text.toString(),
-                binding.password.text.toString()
+                findViewById<EditText>(R.id.phoneEmail).text.toString(),
+                findViewById<EditText>(R.id.password).text.toString()
             )
-
         } catch (e: EmptyFieldException) {
             flag = false
             Toast.makeText(
@@ -60,7 +59,6 @@ class MainActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
         }
-        print(flag)
-        return true
+        return flag
     }
 }

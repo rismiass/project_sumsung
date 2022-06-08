@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="app.ui.subtract.NotificationsFragment"
+        android:name="app.ui.subtract.SubtractFragment"
         android:label="@string/title_subtract"
         tools:layout="@layout/fragment_notifications" />
     <fragment

@@ -16,7 +16,6 @@ class OkhttpCoursesSource(
     config: OkhttpConfig
 ) : BaseOkhttpSource(config), CoursesSource {
     override suspend fun getCourses(): List<Course> {
-        delay(1000)
         val request = Request.Builder().get().endpoint("courses").build()
         val call = client.newCall(request)
         val typeToken = object : TypeToken<List<GetCourseResponseEntity>>() {}

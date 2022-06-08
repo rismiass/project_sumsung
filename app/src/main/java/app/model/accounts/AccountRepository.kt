@@ -1,6 +1,7 @@
 package app.model.accounts
 
 import android.text.Editable
+import android.util.Log
 import app.model.BackendException
 import app.model.*
 import app.model.InvalidCredentialsException
