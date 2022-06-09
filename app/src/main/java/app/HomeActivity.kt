@@ -12,6 +12,7 @@ import com.example.project.databinding.ActivityHomeBinding
 import android.graphics.drawable.ColorDrawable
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.navigation.ui.NavigationUI
 import com.example.project.R
 
@@ -53,9 +54,10 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+            Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
             return NavigationUI.onNavDestinationSelected(item, this.findNavController(R.id.nav_host_fragment_activity_home))
                     || super.onOptionsItemSelected(item)
-        //Toast.makeText(applicationContext, "Настройки", Toast.LENGTH_SHORT).show()
+
     }
 
 }

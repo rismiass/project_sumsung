@@ -56,4 +56,5 @@
     <string name="mcdonalds">Mcdonalds</string>
     <string name="last_message">Здравствуйте! Приглашаем вас...</string>
     <string name="sender">Отправитель</string>
+    <string name="apply_text">Применить</string>
 </resources>

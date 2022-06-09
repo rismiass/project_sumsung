@@ -41,10 +41,14 @@
             app:destination="@id/courses" />
     </fragment>
     <fragment
-        android:id="@+id/navigation_settings"
+        android:id="@+id/settings"
         android:name="app.ui.settings.SettingsFragment"
         android:label="Настройки"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_main_settingsFragment"
+            app:destination="@id/main_settings" />
+    </fragment>
     <fragment
         android:id="@+id/adviceLawyer"
         android:name="app.ui.advice.AdviceFragment"
@@ -68,5 +72,11 @@
         android:name="app.ui.course.CourseFragment"
         android:label="Курсы"
         tools:layout="@layout/fragment_course">
+    </fragment>
+    <fragment
+        android:id="@+id/main_settings"
+        android:name="app.ui.settingsmain.MainSettingsFragment"
+        android:label="Главное"
+        tools:layout="@layout/fragment_main_settings">
     </fragment>
 </navigation>

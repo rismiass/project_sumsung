@@ -15,7 +15,7 @@
         android:layout_marginTop="90dp"
         >
         <FrameLayout
-            android:id="@+id/courses"
+            android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -40,7 +40,7 @@
         </FrameLayout>
         <FrameLayout
             android:layout_marginTop="40dp"
-            android:id="@+id/advice_lawyer"
+            android:id="@+id/replace_foto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewEnd"
@@ -49,7 +49,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/text_advice_lawyer"
+                android:id="@+id/text_replace_foto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
@@ -65,7 +65,7 @@
 
         <FrameLayout
             android:layout_marginTop="40dp"
-            android:id="@+id/about_company"
+            android:id="@+id/about_self"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewEnd"
@@ -74,7 +74,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/text_about_company"
+                android:id="@+id/text_about_self"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
@@ -89,7 +89,7 @@
         </FrameLayout>
         <FrameLayout
             android:layout_marginTop="40dp"
-            android:id="@+id/contacts"
+            android:id="@+id/history_work"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="viewEnd"
@@ -98,7 +98,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/text_contacts"
+                android:id="@+id/text_history_work"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/frameText"
