@@ -2,8 +2,8 @@ package sources.accounts
 
 import app.model.accounts.Account
 import app.model.accounts.AccountSource
+import app.model.accounts.MainInformationUser
 import app.model.accounts.SignUpData
-import app.model.wrapBackendExceptions
 import kotlinx.coroutines.delay
 import okhttp3.Request
 import sources.accounts.entities.*
@@ -53,12 +53,13 @@ class OkhttpAccountSource(
         return accountEntity.toAccount()
     }
 
-    override suspend fun setInformationUser(
-        userId: Long,
-        headersInformation: List<String>,
-        information: List<String>
-    )  {
+    override suspend fun setInformationUser(informationUser: MainInformationUser):String  {
         delay(1000)
-        /// nxdgjsrj
+        val request = Request.Builder()
+            .post(informationUser.toJsonRequestBody())
+            .endpoint("/set-information").build()
+        val response = client.newCall(request).suspendEnqueue()
+        val userEntity = response.parseJsonResponse<UpdateUserInformationRequestEntity>()
+        return userEntity.status
     }
 }

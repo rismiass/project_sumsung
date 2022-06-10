@@ -1,5 +1,6 @@
 package app.ui.home
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -30,7 +31,7 @@ class HomeFragment : Fragment() {
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
         val account = homeViewModel.account
-        binding.dataUser.text = "${account.name}\n${account.surname}\n${account.email}\n${account.phone}"
+        binding.dataUser.text = "${account.name}\n${account.patronymic}\n${account.surname}\n${account.email}\n${account.phone}"
         binding.textUser.text = account.aboutSelf
         binding.workUser.text = account.historyWork
         val root: View = binding.root

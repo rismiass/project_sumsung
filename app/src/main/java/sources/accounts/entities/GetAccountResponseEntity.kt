@@ -9,6 +9,7 @@ data class GetAccountResponseEntity (
     val email: String,
     val phone: String,
     val aboutSelf: String,
+    val patronymic: String,
     val historyWork: String,
     val photo: Int
 ){
@@ -18,6 +19,7 @@ data class GetAccountResponseEntity (
         surname = surname,
         email = email,
         phone = phone,
+        patronymic = patronymic,
         aboutSelf = aboutSelf,
         historyWork = historyWork,
         photo = photo

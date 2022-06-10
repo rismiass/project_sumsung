@@ -48,4 +48,22 @@ class AccountRepository(
         return account
     }
 
+    suspend fun setAccount(name: String, surname: String, patronymic: String, phone: String,
+        email: String): String {
+        val status = try {
+            accountsSource.setInformationUser(
+                MainInformationUser(
+                name=name, surname=surname, patronymic=patronymic, phone=phone, email=email))
+        } catch (e: Exception) {
+            if (e is BackendException && e.code == 401) {
+                // map 401 error for sign-in to InvalidCredentialsException
+                throw InvalidCredentialsException(e)
+            } else {
+                throw e
+            }
+
+        }
+        return status
+    }
+
 }

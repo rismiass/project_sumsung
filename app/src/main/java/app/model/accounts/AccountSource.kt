@@ -18,5 +18,5 @@ package app.model.accounts
      /**
       * Изменяет пользовательские данные
       */
-     suspend fun setInformationUser(userId: Long, headersInformation: List<String>, information: List<String>)
+     suspend fun setInformationUser(informationUser: MainInformationUser): String
  }
