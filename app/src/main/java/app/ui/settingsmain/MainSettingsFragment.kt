@@ -2,6 +2,7 @@ package app.ui.settingsmain
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.text.Editable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -30,13 +31,19 @@ class MainSettingsFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainSettingsViewModel::class.java)
         _binding = FragmentMainSettingsBinding.inflate(inflater, container, false)
         val data = viewModel.listSettings
-        val recyclerView = binding.listSettings
-        val adapter = context?.let { AdaptorSettings(data, it) }
-        recyclerView.adapter = adapter
+        binding.surname.text = data[0].textSettings.toEditable()
+        binding.name.text = data[1].textSettings.toEditable()
+        binding.patronymic.text = data[2].textSettings.toEditable()
+        binding.email.text = data[3].textSettings.toEditable()
+        binding.phone.text = data[4].textSettings.toEditable()
         val root: View = binding.root
-        binding.apply.setOnClickListener {}
         return root
 
     }
+
+    fun String.toEditable(): Editable =  Editable.Factory.getInstance().newEditable(this)
+
+
+
 
 }

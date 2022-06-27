@@ -1,12 +1,11 @@
 package app.ui.dashboard
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import app.adaptor.AdaptorAdvertisement
+import com.example.project.R
 import com.example.project.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -34,10 +33,18 @@ class DashboardFragment : Fragment() {
         //    textView.text = it
         //})
         val data = dashboardViewModel.listAds
+        setHasOptionsMenu(true)
+
         val recyclerView = binding.listAdvertisements
         val adapter = context?.let { AdaptorAdvertisement(data, it) }
         recyclerView.adapter = adapter
         return root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.dashboard_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+
     }
 
     override fun onDestroyView() {

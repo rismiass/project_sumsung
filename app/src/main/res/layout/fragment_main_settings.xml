@@ -6,33 +6,156 @@
     android:layout_height="match_parent"
     tools:context="app.ui.settingsmain.MainSettingsFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_settings"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+    <LinearLayout
+        android:id="@+id/s_surname"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/apply"
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@id/list_settings"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:backgroundTint="#66FFFFFF"
-        app:cardCornerRadius="20dp">
-
+        android:backgroundTint="@color/transparent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
         <TextView
-            style="@style/applyButton"
-            android:paddingVertical="5dp"
-            android:backgroundTint="@color/transparent"
+            android:id="@+id/name_surname"
+            style="@style/companyText"
+            android:layout_marginStart="8dp"
+            android:text="@string/surname"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:text="Трудолюбивый"
+            style="@style/settingsText"
             android:layout_height="wrap_content"
-            android:text="@string/apply_text" />
-    </androidx.cardview.widget.CardView>
+            android:background="@drawable/card_back"
+            />
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/s_name"
+        app:layout_constraintTop_toBottomOf="@id/s_surname"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/transparent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_name"
+            style="@style/companyText"
+            android:layout_marginStart="8dp"
+            android:text="@string/name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:text="Отчество"
+            style="@style/settingsText"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_back"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/s_patronymic"
+        app:layout_constraintTop_toBottomOf="@id/s_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/transparent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_patronymic"
+            style="@style/companyText"
+            android:layout_marginStart="8dp"
+            android:text="@string/patronymic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/patronymic"
+            android:layout_width="match_parent"
+            android:text="Трудолюбивый"
+            style="@style/settingsText"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_back"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/s_email"
+        app:layout_constraintTop_toBottomOf="@id/s_patronymic"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/transparent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_email"
+            style="@style/companyText"
+            android:layout_marginStart="8dp"
+            android:text="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:text="@string/email"
+            style="@style/settingsText"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_back"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/s_phone"
+        app:layout_constraintTop_toBottomOf="@id/s_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/transparent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_phone"
+            style="@style/companyText"
+            android:layout_marginStart="8dp"
+            android:text="@string/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:text="@string/email"
+            style="@style/settingsText"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_back"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/applyButton"
+        style="@style/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/apply_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:text="@string/apply_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/s_phone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

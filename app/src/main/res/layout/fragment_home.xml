@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="app.ui.home.HomeFragment">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="107dp"
@@ -32,7 +39,6 @@
         android:layout_width="225dp"
         android:layout_height="wrap_content"
         style="@style/companyText"
-        android:text="@string/data_user"
         android:textAlignment="textStart"
         android:layout_marginTop="61dp"
         android:layout_marginStart="150dp"

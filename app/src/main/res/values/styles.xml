@@ -25,7 +25,7 @@
     <style name="applyButton">
         <item name="layout_constraintHorizontal_bias">0.5</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">32dp</item>
+        <item name="android:textSize">24dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">normal</item>
         <item name="fontFamily">@font/roboto</item>
@@ -46,6 +46,7 @@
         <item name="android:layout_marginStart">10dp</item>
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textSize">18dp</item>
+        <item name="android:paddingStart">20dp</item>
         <item name="android:paddingVertical">15dp</item>
     </style>
     

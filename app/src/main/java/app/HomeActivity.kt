@@ -12,6 +12,7 @@ import com.example.project.databinding.ActivityHomeBinding
 import android.graphics.drawable.ColorDrawable
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.navigation.ui.NavigationUI
 import com.example.project.R
@@ -27,6 +28,8 @@ class HomeActivity : AppCompatActivity() {
         //supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //supportActionBar?.setDisplayShowHomeEnabled(false)
         binding = ActivityHomeBinding.inflate(layoutInflater)
+        var bar = binding.progressBar
+        bar.visibility = ProgressBar.VISIBLE
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
@@ -42,6 +45,7 @@ class HomeActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController)
         NavigationUI.setupActionBarWithNavController(this,navController)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        bar.visibility = ProgressBar.INVISIBLE
     }
     override fun onSupportNavigateUp(): Boolean {
         val navController = this.findNavController(R.id.nav_host_fragment_activity_home)

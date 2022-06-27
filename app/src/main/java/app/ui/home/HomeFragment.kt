@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.databinding.adapters.RadioGroupBindingAdapter
 import androidx.fragment.app.Fragment
@@ -28,12 +29,15 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+        var bar = binding.progressBar
+        bar.visibility = ProgressBar.VISIBLE
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
         val account = homeViewModel.account
         binding.dataUser.text = "${account.name}\n${account.patronymic}\n${account.surname}\n${account.email}\n${account.phone}"
         binding.textUser.text = account.aboutSelf
         binding.workUser.text = account.historyWork
+        bar.visibility = ProgressBar.INVISIBLE
         val root: View = binding.root
         return root
     }

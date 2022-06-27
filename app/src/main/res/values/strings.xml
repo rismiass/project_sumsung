@@ -27,7 +27,6 @@
     <string name="title_dashboard">Вакансии</string>
     <string name="title_subtract">Диалоги</string>
     <string name="title_information">Информация</string>
-    <string name="data_user">Сапрыкин\nКонстантин\nДмитриевич\nsaprikostya@gmail.com\n+79818590069</string>
     <string name="about_self">О себе:</string>
     <string name="text_user">Обо мне нет никакой информации</string>
     <string name="history_work">История:</string>
@@ -57,4 +56,5 @@
     <string name="last_message">Здравствуйте! Приглашаем вас...</string>
     <string name="sender">Отправитель</string>
     <string name="apply_text">Применить</string>
+    <string name="patronymic">Отчество</string>
 </resources>
