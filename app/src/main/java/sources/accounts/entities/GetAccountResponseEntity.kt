@@ -11,7 +11,12 @@ data class GetAccountResponseEntity (
     val aboutSelf: String,
     val patronymic: String,
     val historyWork: String,
-    val photo: Int
+    val photo: Int,
+    val quality: String,
+    val skills: String,
+    val profession: String,
+    val vk: String
+
 ){
     fun toAccount(): Account = Account(
         id = id,
@@ -22,7 +27,12 @@ data class GetAccountResponseEntity (
         patronymic = patronymic,
         aboutSelf = aboutSelf,
         historyWork = historyWork,
-        photo = photo
+        photo = photo,
+        quality = quality,
+        skills = skills,
+        profession = profession,
+        vk = vk
+
 
     )
 }

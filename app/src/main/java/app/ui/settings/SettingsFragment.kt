@@ -30,6 +30,9 @@ class SettingsFragment : Fragment() {
         binding.main.setOnClickListener {
             view.findNavController().navigate(R.id.action_settingsFragment_to_main_settingsFragment)
         }
+        binding.aboutSelf.setOnClickListener {
+            view.findNavController().navigate(R.id.action_settingsFragment_to_self_settingsFragment)
+        }
     }
 
 }

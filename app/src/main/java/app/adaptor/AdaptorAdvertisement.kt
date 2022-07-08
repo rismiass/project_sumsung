@@ -17,6 +17,9 @@ public class AdaptorAdvertisement(private val data : List<Ad>, val context: Cont
 
     }
 
+    private val dictImage = mapOf<String, Int>("официант" to R.drawable.waiter,
+    "администратор" to R.drawable.administrator, "няня" to R.drawable.nunny, "промоутер" to R.drawable.promoter)
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInFlater = LayoutInflater.from(parent.context)
         val view = layoutInFlater.inflate(R.layout.view_advertisement, parent, false)
@@ -29,7 +32,7 @@ public class AdaptorAdvertisement(private val data : List<Ad>, val context: Cont
         val salary = holder.root.findViewById<TextView>(R.id.text_salary)
         val workingDays = holder.root.findViewById<TextView>(R.id.text_work_days)
         val image = holder.root.findViewById<ImageView>(R.id.picture_work)
-        image.setImageResource(item.image)
+        dictImage.get(item.image)?.let { image.setImageResource(it) }
         profession.text = item.profession
         salary.text = item.salary
         workingDays.text = item.working_days

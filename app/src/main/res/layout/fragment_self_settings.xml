@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.ui.settingsmain.MainSettingsFragment">
+    tools:context="app.ui.settingsself.SettingsSelfFragment">
 
     <LinearLayout
-        android:id="@+id/s_surname"
+        android:id="@+id/s_quality"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
@@ -17,14 +17,14 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/name_surname"
+            android:id="@+id/name_quality"
             style="@style/companyText"
             android:layout_marginStart="8dp"
             android:text="@string/surname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <EditText
-            android:id="@+id/surname"
+            android:id="@+id/quality"
             android:layout_width="match_parent"
             android:text="Трудолюбивый"
             style="@style/settingsText"
@@ -35,8 +35,8 @@
 
 
     <LinearLayout
-        android:id="@+id/s_name"
-        app:layout_constraintTop_toBottomOf="@id/s_surname"
+        android:id="@+id/s_skills"
+        app:layout_constraintTop_toBottomOf="@id/s_quality"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,14 +45,14 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/name_name"
+            android:id="@+id/name_skills"
             style="@style/companyText"
             android:layout_marginStart="8dp"
             android:text="@string/name_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/skills"
             android:layout_width="match_parent"
             android:text="Отчество"
             style="@style/settingsText"
@@ -63,8 +63,8 @@
 
 
     <LinearLayout
-        android:id="@+id/s_patronymic"
-        app:layout_constraintTop_toBottomOf="@id/s_name"
+        android:id="@+id/s_profession"
+        app:layout_constraintTop_toBottomOf="@id/s_skills"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,14 +73,14 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/name_patronymic"
+            android:id="@+id/name_profession"
             style="@style/companyText"
             android:layout_marginStart="8dp"
             android:text="@string/patronymic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <EditText
-            android:id="@+id/patronymic"
+            android:id="@+id/profession"
             android:layout_width="match_parent"
             android:text="Трудолюбивый"
             style="@style/settingsText"
@@ -91,8 +91,8 @@
 
 
     <LinearLayout
-        android:id="@+id/s_email"
-        app:layout_constraintTop_toBottomOf="@id/s_patronymic"
+        android:id="@+id/s_vk"
+        app:layout_constraintTop_toBottomOf="@id/s_profession"
         android:layout_marginTop="10dp"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,14 +101,14 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/name_email"
+            android:id="@+id/name_vk"
             style="@style/companyText"
             android:layout_marginStart="8dp"
             android:text="@string/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/vk"
             android:layout_width="match_parent"
             android:text="@string/email"
             style="@style/settingsText"
@@ -117,33 +117,6 @@
             />
     </LinearLayout>
 
-
-    <LinearLayout
-        android:id="@+id/s_phone"
-        app:layout_constraintTop_toBottomOf="@id/s_email"
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="match_parent"
-        android:backgroundTint="@color/transparent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/name_phone"
-            style="@style/companyText"
-            android:layout_marginStart="8dp"
-            android:text="@string/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:text="@string/email"
-            style="@style/settingsText"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card_back"
-            />
-    </LinearLayout>
 
 
     <Button
@@ -157,5 +130,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         android:text="@string/apply_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/s_phone" />
+        app:layout_constraintTop_toBottomOf="@id/s_vk" />
 </androidx.constraintlayout.widget.ConstraintLayout>

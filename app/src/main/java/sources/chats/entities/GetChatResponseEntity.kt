@@ -7,7 +7,7 @@ data class GetChatResponseEntity(
     val id: Long,
     val sender: String,
     val lastMessage: String,
-    val image: Int
+    val image: String
 ) {
     fun toChat(): Chat = Chat(
         id =id,

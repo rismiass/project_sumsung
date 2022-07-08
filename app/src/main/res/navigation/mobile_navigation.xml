@@ -48,6 +48,9 @@
         <action
             android:id="@+id/action_settingsFragment_to_main_settingsFragment"
             app:destination="@id/main_settings" />
+        <action
+            android:id="@+id/action_settingsFragment_to_self_settingsFragment"
+            app:destination="@id/self_settings" />
     </fragment>
     <fragment
         android:id="@+id/adviceLawyer"
@@ -78,5 +81,11 @@
         android:name="app.ui.settingsmain.MainSettingsFragment"
         android:label="Главное"
         tools:layout="@layout/fragment_main_settings">
+    </fragment>
+    <fragment
+        android:id="@+id/self_settings"
+        android:name="app.ui.settingsself.SelfSettingsFragment"
+        android:label="О себе"
+        tools:layout="@layout/fragment_self_settings">
     </fragment>
 </navigation>

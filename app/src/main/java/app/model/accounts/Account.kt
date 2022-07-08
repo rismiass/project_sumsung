@@ -9,5 +9,9 @@ class Account(
     val phone: String,
     val aboutSelf: String,
     val historyWork: String,
-    val photo: Int
+    val photo: Int,
+    val quality: String,
+    val skills: String,
+    val profession: String,
+    val vk: String
 )

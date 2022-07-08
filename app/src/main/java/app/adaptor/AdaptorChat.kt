@@ -17,6 +17,9 @@ public class AdaptorChat(private val data : List<Chat>, val context: Context) : 
 
     }
 
+    private val dictChats = mapOf<String, Int>("макдоналдс" to R.drawable.mak,
+    "мтс" to R.drawable.mtc, "мир" to R.drawable.world)
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val layoutInFlater = LayoutInflater.from(parent.context)
         val view = layoutInFlater.inflate(R.layout.view_chat, parent, false)
@@ -28,7 +31,7 @@ public class AdaptorChat(private val data : List<Chat>, val context: Context) : 
         val sender = holder.root.findViewById<TextView>(R.id.sender)
         val lastMessage = holder.root.findViewById<TextView>(R.id.last_message)
         val image = holder.root.findViewById<ImageView>(R.id.picture_sender)
-        image.setImageResource(item.image)
+        dictChats.get(item.image)?.let { image.setImageResource(it) }
         sender.text = item.sender
         lastMessage.text = item.lastMessage
     }

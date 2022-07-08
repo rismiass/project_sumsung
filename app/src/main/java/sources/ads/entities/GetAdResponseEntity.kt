@@ -7,7 +7,7 @@ data class GetAdResponseEntity(
     val profession:String,
     val salary: String,
     val working_days: String,
-    val image: Int
+    val image: String
 ) {
     fun toAd(): Ad = Ad(
         id = id,
